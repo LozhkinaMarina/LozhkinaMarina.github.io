@@ -1,2 +1,2 @@
 # LozhkinaMarina.github.io
-Сайт-визитка на HTML и CSS
+QA Engineer | Portfolio | Manual Testing · API Testing · Postman · JIRA
