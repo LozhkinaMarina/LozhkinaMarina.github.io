@@ -1,198 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(97681920, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97681920" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    <meta charset="utf-8"/>
-    <title>Marina - QA Engineer</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/004.jpg">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!-- MK Lightbox -->
-    <link href="css/mklb.css" rel="stylesheet" type="text/css"/>
-    <!-- Icons -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Slider -->
-    <link href="css/tiny-slider.css" rel="stylesheet"/>
-    <!-- Main css File -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt"/>
-    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <title>Марина - QA Engineer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        li strong {
+            color: #007bff;
+            display: block;
+            font-size: 1.1em;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            h1 { font-size: 2em; }
+        }
+    </style>
 </head>
+<body>
+    <h1>Привет, я - Марина</h1>
+    <p>Я - <strong>QA engineer</strong> Тестировщик ПО</p>
+    <p><a href="images/Marina.pdf">Скачать мое резюме</a></p>
 
-<body data-bs-spy="scroll" data-bs-offset="20" data-bs-target="#navbar-navlist">
-<!-- Loader -->
-<div id="preloader">
-    <div id="status">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-    </div>
-</div>
-<!-- Loader -->
+    <h2>Персональные данные</h2>
+    <p class="contact">E-mail: <a href="mailto:marinadespoon@gmail.com">marinadespoon@gmail.com</a></p>
+    <p class="contact">Языки: Русский, английский</p>
+    <p class="contact">Национальность: Россия</p>
+    <p>Я — <strong>QA engineer</strong>, тестировщик в области функционального и нефункционального тестирования программного обеспечения, включая тестирование десктопных приложений и веб-сайтов, тестирования UI/UX, API</p>
 
-<!-- Navbar Start -->
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-    <div class="container">
-        <!-- Logo container-->
-        <a class="logo navbar-brand" href="#">Марина</a>
+    <h2>Навыки и стек</h2>
+    <p>Во время работы я использую следующий стек инструментов и технологий:</p>
+    <ul>
+        <li><strong>Developer Tools в браузере</strong><br>Для тестирования front-части web-приложений</li>
+        <li><strong>Postman</strong><br>Для тестирования API и написания автотестов</li>
+        <li><strong>Swagger</strong><br>Для тестирования API и документации по API</li>
+        <li><strong>MySQL</strong><br>Просмотр данных в БД и написание SQL-запросов</li>
+        <li><strong>REST-API, SOAP</strong><br>Использование в процессе тестирования обмена данными</li>
+        <li><strong>Yandex Tracker</strong><br>Организация ежедневной работы и написание багрепортов</li>
+        <li><strong>Test IT</strong><br>Написание тест-кейсов</li>
+        <li><strong>Charles</strong><br>Тестирование front-end / back-end</li>
+        <li><strong>Kibana</strong><br>Просмотр логов приложений</li>
+        <li><strong>HTML, CSS</strong><br>Тестирование front-end</li>
+        <li><strong>Figma</strong><br>Тестирование user-interface front-end</li>
+        <li><strong>Pixel perfect</strong><br>Тестирование user-interface front-end</li>
+    </ul>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <i class="mdi mdi-menu"></i>
-        </button><!--end button-->
+    <h2>Мои контакты</h2>
+    <p class="contact">Телефон: <a href="tel:+7 996 550 3289">++7 996 550 3289</a></p>
+    <p class="contact">Telegram: <a href="https://t.me/lozhka_dig">@lozhka_dig</a></p>
+    <p class="contact">Локация: Россия</p>
 
-        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-            <ul id="navbar-navlist" class="navbar-nav navbar-nav-link ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Главная</a>
-                </li><!--end nav item-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Навыки и стек</a>
-                </li><!--end nav item-->
-                <li class="nav-item">
-                    <a class="nav-link" href="file:///C:/Users/m-tug/Downloads/Тугарёва%20Марина%20Александровна%20(1).pdf">Резюме</a>
-                </li><!--end nav item-->
-
-                <li class="nav-item">
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature-widget text-left rounded">
-                    <div class="icon services-icon text-primary mb-3">
-                        <i data-feather="target" class="fea icon-md"></i>
-                    </div>
-                    <div class="services-texts">
-                        <h3 class="title mb-3">Pixel perfect</h3>
-                        <p class="text-light-muted mb-4">Тестирование user-interface front-end</p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div><!-- end row -->
-    </div>
-</section>
-<!-- End Start -->
-
-<!-- Contact Start -->
-<section class="section pb-0" id="contact">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="container-title text-center mb-4 pb-2">
-                    <div class="titles">
-                        <h2 class="title text-capitalize mb-4">Мои контакты</h2>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-
-        <div class="row">
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="contact-detail text-center">
-                    <div class="icon">
-                        <i data-feather="phone" class="fea icon-md"></i>
-                    </div>
-                    <div class="content mt-4">
-                        <h5 class="title">Телефон</h5>
-                        <a href="tel:+905488659956" class="text-primary">+7 (987) 441-77-98</a>
-                    </div>
-                </div>
-            </div><!--end col-->
-
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="contact-detail text-center">
-                    <div class="icon">
-                        <i data-feather="Telegram" class="fea icon-md"></i>
-                    </div>
-                    <div class="content mt-4">
-                        <h5 class="title">Telegram</h5>
-                        <a href="mailto:@marinati_k<" class="text-primary">@marinati_k</a>
-                    </div>
-                </div>
-            </div><!--end col-->
-
-            <div class="col-md-4 mt-4 pt-2">
-                <div class="contact-detail text-center">
-                    <div class="icon">
-                        <i data-feather="map-pin" class="fea icon-md"></i>
-                    </div>
-                    <div class="content mt-4">
-                        <h5 class="title">Локация</h5>
-                        <p class="text-light-muted">Россия</p>
-                    </div>
-                </div>
-            </div><!--end col-->
-        </div><!--end row-->
-    </div><!--end container-->
-</section><!--end section-->
-
-<footer class="footer footer-bar bg-black">
-    <div class="container text-foot text-center">
-        <p class="mb-0 text-white-50">©
-            <script>document.write(new Date().getFullYear())</script>
-            Marina.❤️</p>
-    </div><!--end container-->
-</footer><!--end footer-->
-<!-- Footer End -->
-
-<a href="javascript: void(0);" class="back-to-top btn btn-icon btn-soft-primary" id="back-to-top"
-   onclick="topFunction()">
-    <i data-feather="arrow-up" class="icons"></i>
-</a>
-<!-- Back to top -->
-
-<!-- Javascript -->
-<script src="js/bootstrap.bundle.min.js"></script>
-
-<!-- Slider -->
-<script src="js/tiny-slider.js "></script>
-<script src="js/tiny-slider-init.js "></script>
-
-<!-- MK Lightbox -->
-<script src="js/mklb.js"></script>
-
-<!-- Contact -->
-<script src="js/contact.js"></script>
-
-<!-- Counter init -->
-<script src="js/counter.init.js"></script>
-
-<!-- Feather icon -->
-<script src="js/feather.min.js"></script>
-
-<!-- Parallax -->
-<script src="js/parallax.js"></script>
-
-<!-- Typed -->
-<script src="js/typed.js"></script>
-<script src="js/typed.init.js"></script>
-
-<!-- Switcher -->
-<script src="js/switcher.js"></script>
-
-<!-- Main Js -->
-<script src="js/app.js"></script>
-
-</body>
-</html>
-
+    <div class="footer">© 2026 Marina. ❤️</div>
 </body>
 </html>
