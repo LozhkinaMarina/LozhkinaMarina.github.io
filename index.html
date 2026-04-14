@@ -64,11 +64,35 @@
             font-size: 0.9em;
             color: #666;
         }
+        header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+        .header-text {
+            flex: 1;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            flex-shrink: 0;
+        }
         @media (max-width: 600px) {
             body { padding: 20px 10px; }
             h1 { font-size: 2em; }
+            header { flex-direction: column; text-align: center; }
+            .avatar { width: 120px; height: 120px; }
         }
     </style>
+    <!-- Favicon (иконка вкладки) - работает с JPG -->
+    <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/jpeg">
+    <!-- Для iOS/Apple -->
+    <link rel="apple-touch-icon" href="images/avatar.jpg">
 </head>
 <body>
     <h1>Привет, я - Марина</h1>
