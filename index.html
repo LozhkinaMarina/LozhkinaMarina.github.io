@@ -15,7 +15,7 @@
             color: #333;
             background: #f9f9f9;
         }
-        /* Шапка с фоновым изображением */
+        /* шапка */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-image: url('images/header-bg.jpg');
@@ -31,7 +31,7 @@
             align-items: center;
             gap: 30px;
         }
-        /* Аватарка слева */
+        /* ава слева */
         .avatar {
             width: 180px;
             height: 180px;
@@ -41,16 +41,15 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.4);
             flex-shrink: 0;
         }
-        /* Текст справа - ЧЕРНЫЙ с красным свечением */
+        /* текст справа */
         .hero-text {
             flex: 1;
-            color: white;
             text-align: left;
         }
         .hero-text h1 {
             font-size: 2.8em;
             margin-bottom: 10px;
-            color: #000;
+            color: #007acc;
             text-shadow: 
                 0 0 10px #ff0000,
                 0 0 20px #ff0000,
@@ -61,7 +60,7 @@
         .hero-text p {
             font-size: 1.3em;
             margin-bottom: 15px;
-            color: #000;
+            color: #007acc; /* Синий как DevTools */
             text-shadow: 
                 0 0 5px #ff0000,
                 0 0 10px #ff0000,
@@ -145,7 +144,7 @@
     <link rel="apple-touch-icon" href="images/avatar.jpg">
 </head>
 <body>
-    <!-- Шапка: АВАТАРКА СЛЕВА + ТЕКСТ СПРАВА -->
+    <!-- Шапка: АВАТАРКА СЛЕВА + СИНИЙ ТЕКСТ СПРАВА -->
     <div class="hero">
         <img src="images/avatar.jpg" alt="Марина" class="avatar">
         <div class="hero-text">
