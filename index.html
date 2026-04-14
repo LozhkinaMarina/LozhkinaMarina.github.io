@@ -15,72 +15,70 @@
             color: #333;
             background: #f9f9f9;
         }
-        /* шапка */
+        /* Шапка БЕЗ фото */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            background-image: url('images/header-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
             border-radius: 20px;
-            padding: 60px 40px;
+            padding: 80px 40px;
             margin-bottom: 40px;
-            position: relative;
-            min-height: 300px;
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 40px;
+            text-align: left;
         }
-        /* ава слева */
+        /* Аватарка-заглушка */
         .avatar {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            border: 8px solid white;
-            object-fit: cover;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            background: linear-gradient(135deg, #007acc, #00d4ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: white;
+            font-weight: bold;
             flex-shrink: 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
-        /* текст справа */
         .hero-text {
             flex: 1;
-            text-align: left;
         }
         .hero-text h1 {
             font-size: 2.8em;
             margin-bottom: 10px;
             color: #007acc;
             text-shadow: 
-                0 0 10px #ff0000,
-                0 0 20px #ff0000,
-                0 0 30px #ff0000,
-                2px 2px 4px rgba(0,0,0,0.5);
-            filter: drop-shadow(0 0 5px #cc0000);
+                0 0 10px rgba(255,255,255,0.8),
+                0 0 20px rgba(255,255,255,0.6),
+                0 0 30px rgba(255,255,255,0.4),
+                2px 2px 4px rgba(0,0,0,0.3);
         }
         .hero-text p {
             font-size: 1.3em;
-            margin-bottom: 15px;
-            color: #007acc; /* Синий как DevTools */
+            margin-bottom: 20px;
+            color: #007acc;
             text-shadow: 
-                0 0 5px #ff0000,
-                0 0 10px #ff0000,
-                1px 1px 2px rgba(0,0,0,0.5);
-            filter: drop-shadow(0 0 3px #cc0000);
+                0 0 8px rgba(255,255,255,0.9),
+                0 0 15px rgba(255,255,255,0.7),
+                1px 1px 2px rgba(0,0,0,0.3);
+            font-weight: 500;
         }
         .hero a {
             color: white;
-            background: rgba(255,255,255,0.2);
-            padding: 12px 25px;
+            background: rgba(0,122,204,0.8);
+            padding: 15px 30px;
             border-radius: 30px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s;
             text-decoration: none;
-            font-weight: 500;
-            display: inline-block;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         .hero a:hover {
-            background: rgba(255,255,255,0.3);
+            background: #007acc;
+            transform: translateY(-2px);
         }
+        /* Остальные стили */
         h2 {
             font-size: 1.5em;
             margin: 40px 0 20px;
@@ -103,7 +101,6 @@
             font-size: 1.2em;
             margin-bottom: 5px;
         }
-        li br { display: block; margin-bottom: 5px; }
         .contact {
             font-size: 1.3em;
             margin: 20px 0;
@@ -112,8 +109,6 @@
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
         .footer {
             text-align: center;
             margin-top: 60px;
@@ -124,29 +119,15 @@
             border-radius: 10px;
         }
         @media (max-width: 600px) {
-            body { padding: 10px; }
-            .hero { 
-                padding: 40px 20px; 
-                flex-direction: column;
-                text-align: center;
-            }
-            .avatar { 
-                width: 140px; 
-                height: 140px; 
-            }
+            .hero { flex-direction: column; text-align: center; padding: 60px 20px; }
+            .avatar { width: 140px; height: 140px; font-size: 2.5em; }
             .hero-text h1 { font-size: 2.2em; }
-            .hero-text p { font-size: 1.1em; }
         }
     </style>
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/jpeg">
-    <link rel="apple-touch-icon" href="images/avatar.jpg">
 </head>
 <body>
-    <!-- Шапка: АВАТАРКА СЛЕВА + СИНИЙ ТЕКСТ СПРАВА -->
     <div class="hero">
-        <img src="images/avatar.jpg" alt="Марина" class="avatar">
+        <div class="avatar">M</div>
         <div class="hero-text">
             <h1>Привет, я - Марина</h1>
             <p>Я - <strong>QA engineer</strong> Тестировщик ПО</p>
@@ -181,6 +162,10 @@
     <p class="contact">Телефон: <a href="tel:+7 996 550 3298">+7 996 550 3298</a></p>
     <p class="contact">Telegram: <a href="https://t.me/lozhka_dig">@lozhka_dig</a></p>
     <p class="contact">Локация: Россия</p>
+
+    <div class="footer">© 2026 Marina. ❤️</div>
+</body>
+</html>
 
     <div class="footer">© 2026 Marina. ❤️</div>
 </body>
