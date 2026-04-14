@@ -15,7 +15,7 @@
             color: #333;
             background: #f9f9f9;
         }
-        /* шапка с фоном */
+        /* Шапка с фоновым изображением */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-image: url('images/header-bg.jpg');
@@ -26,48 +26,47 @@
             padding: 60px 40px;
             margin-bottom: 40px;
             position: relative;
-            color: white;
-            text-align: center;
             min-height: 300px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            align-items: center;
+            gap: 30px;
         }
-        /* ава */
+        /* Аватарка слева */
         .avatar {
             width: 180px;
             height: 180px;
             border-radius: 50%;
             border: 8px solid white;
-            position: absolute;
-            top: -90px;
-            left: 50%;
-            transform: translateX(-50%);
             object-fit: cover;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            flex-shrink: 0;
         }
-        /* Белый текст с красной обводкой */
-        .hero h1 {
+        /* Текст справа - ЧЕРНЫЙ с красным свечением */
+        .hero-text {
+            flex: 1;
+            color: white;
+            text-align: left;
+        }
+        .hero-text h1 {
             font-size: 2.8em;
             margin-bottom: 10px;
-            color: white;
+            color: #000;
             text-shadow: 
-                0 0 5px rgba(255,255,255,0.8),
-                2px 2px 0 #dc3545,
-                -2px -2px 0 #dc3545,
-                2px -2px 0 #dc3545,
-                -2px 2px 0 #dc3545;
-            -webkit-text-stroke: 1px #dc3545;
+                0 0 10px #ff0000,
+                0 0 20px #ff0000,
+                0 0 30px #ff0000,
+                2px 2px 4px rgba(0,0,0,0.5);
+            filter: drop-shadow(0 0 5px #cc0000);
         }
-        .hero p {
+        .hero-text p {
             font-size: 1.3em;
             margin-bottom: 15px;
-            color: white;
+            color: #000;
             text-shadow: 
-                0 0 3px rgba(255,255,255,0.8),
-                1px 1px 0 #dc3545,
-                -1px -1px 0 #dc3545;
-            -webkit-text-stroke: 0.5px #dc3545;
+                0 0 5px #ff0000,
+                0 0 10px #ff0000,
+                1px 1px 2px rgba(0,0,0,0.5);
+            filter: drop-shadow(0 0 3px #cc0000);
         }
         .hero a {
             color: white;
@@ -78,6 +77,7 @@
             transition: all 0.3s;
             text-decoration: none;
             font-weight: 500;
+            display: inline-block;
         }
         .hero a:hover {
             background: rgba(255,255,255,0.3);
@@ -126,10 +126,17 @@
         }
         @media (max-width: 600px) {
             body { padding: 10px; }
-            .hero { padding: 40px 20px; min-height: 250px; }
-            .avatar { width: 140px; height: 140px; top: -70px; }
-            .hero h1 { font-size: 2.2em; }
-            .hero p { font-size: 1.1em; }
+            .hero { 
+                padding: 40px 20px; 
+                flex-direction: column;
+                text-align: center;
+            }
+            .avatar { 
+                width: 140px; 
+                height: 140px; 
+            }
+            .hero-text h1 { font-size: 2.2em; }
+            .hero-text p { font-size: 1.1em; }
         }
     </style>
     <!-- Favicon -->
@@ -138,12 +145,14 @@
     <link rel="apple-touch-icon" href="images/avatar.jpg">
 </head>
 <body>
-    <!-- шапка с фоном и аватаркой -->
+    <!-- Шапка: АВАТАРКА СЛЕВА + ТЕКСТ СПРАВА -->
     <div class="hero">
         <img src="images/avatar.jpg" alt="Марина" class="avatar">
-        <h1>Привет, я - Марина</h1>
-        <p>Я - <strong>QA engineer</strong> Тестировщик ПО</p>
-        <a href="images/Marina.pdf">Скачать мое резюме</a>
+        <div class="hero-text">
+            <h1>Привет, я - Марина</h1>
+            <p>Я - <strong>QA engineer</strong> Тестировщик ПО</p>
+            <a href="images/Marina.pdf">Скачать мое резюме</a>
+        </div>
     </div>
 
     <h2>Персональные данные</h2>
