@@ -14,7 +14,173 @@
             line-height: 1.6;
             color: #333;
             background: #f9f9f9;
-        
+        }
+        /* Шапка с фоновым изображением */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url('images/header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            position: relative;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        /* Аватарка слева */
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 8px solid white;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+        /* Текст справа - СИНИЙ с БЕЛЫМ свечением */
+        .hero-text {
+            flex: 1;
+            text-align: left;
+        }
+        .hero-text h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: #007acc; /* Синий как DevTools */
+            text-shadow: 
+                0 0 10px rgba(255,255,255,0.9),
+                0 0 20px rgba(255,255,255,0.8),
+                0 0 30px rgba(255,255,255,0.6),
+                0 0 40px rgba(255,255,255,0.4),
+                2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-text p {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #007acc; /* Синий как DevTools */
+            text-shadow: 
+                0 0 8px rgba(255,255,255,0.9),
+                0 0 15px rgba(255,255,255,0.8),
+                0 0 25px rgba(255,255,255,0.6),
+                1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .hero a {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 25px;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+        }
+        .hero a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 40px 0 20px;
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        p { margin: 10px 0; font-size: 1.1em; }
+        ul { list-style: none; padding: 0; }
+        li {
+            margin: 15px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        li strong {
+            color: #007bff;
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        li br { display: block; margin-bottom: 5px; }
+        .contact {
+            font-size: 1.3em;
+            margin: 20px 0;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #666;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .hero { 
+                padding: 40px 20px; 
+                flex-direction: column;
+                text-align: center;
+            }
+            .avatar { 
+                width: 140px; 
+                height: 140px; 
+            }
+            .hero-text h1 { font-size: 2.2em; }
+            .hero-text p { font-size: 1.1em; }
+        }
+    </style>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="images/avatar.jpg">
+</head>
+<body>
+    <!-- Шапка: АВАТАРКА СЛЕВА + СИНИЙ ТЕКСТ С БЕЛЫМ СВЕЧЕНИЕМ СПРАВА -->
+    <div class="hero">
+        <img src="images/avatar.jpg" alt="Марина" class="avatar">
+        <div class="hero-text">
+            <h1>Привет, я - Марина</h1>
+            <p>Я - <strong>QA engineer</strong> Тестировщик ПО</p>
+            <a href="images/Marina.pdf">Скачать мое резюме</a>
+        </div>
+    </div>
+
+    <h2>Персональные данные</h2>
+    <p class="contact">E-mail: <a href="mailto:marinadespoon@gmail.com">marinadespoon@gmail.com</a></p>
+    <p class="contact">Языки: Русский, английский</p>
+    <p class="contact">Национальность: Россия</p>
+    <p>Я — <strong>QA engineer</strong>, тестировщик в области функционального и нефункционального тестирования программного обеспечения, включая тестирование десктопных приложений и веб-сайтов, тестирования UI/UX, API</p>
+
+    <h2>Навыки и стек</h2>
+    <p>Во время работы я использую следующий стек инструментов и технологий:</p>
+    <ul>
+        <li><strong>Developer Tools в браузере</strong><br>Для тестирования front-части web-приложений</li>
+        <li><strong>Postman</strong><br>Для тестирования API и написания автотестов</li>
+        <li><strong>Swagger</strong><br>Для тестирования API и документации по API</li>
+        <li><strong>MySQL</strong><br>Просмотр данных в БД и написание SQL-запросов</li>
+        <li><strong>REST-API, SOAP</strong><br>Использование в процессе тестирования обмена данными</li>
+        <li><strong>Yandex Tracker</strong><br>Организация ежедневной работы и написание багрепортов</li>
+        <li><strong>Test IT</strong><br>Написание тест-кейсов</li>
+        <li><strong>Charles</strong><br>Тестирование front-end / back-end</li>
+        <li><strong>Kibana</strong><br>Просмотр логов приложений</li>
+        <li><strong>HTML, CSS</strong><br>Тестирование front-end</li>
+        <li><strong>Figma</strong><br>Тестирование user-interface front-end</li>
+        <li><strong>Pixel perfect</strong><br>Тестирование user-interface front-end</li>
+    </ul>
+
+    <h2>Мои контакты</h2>
+    <p class="contact">Телефон: <a href="tel:+7 996 550 3298">+7 996 550 3298</a></p>
+    <p class="contact">Telegram: <a href="https://t.me/lozhka_dig">@lozhka_dig</a></p>
+    <p class="contact">Локация: Россия</p>
 
     <div class="footer">© 2026 Marina. ❤️</div>
 </body>
